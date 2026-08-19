@@ -72,6 +72,11 @@ section {
     margin: 0 auto;
 }
 
+.container-sm {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
 /* ---------------------------------------------------------------------- */
 /* ------------------------------- HEADER ------------------------------- */
 /* ---------------------------------------------------------------------- */
@@ -257,6 +262,10 @@ section {
 /* ---------------------------- LEARN SECTION - ------------------------- */
 /* ---------------------------------------------------------------------- */
 
+.learn {
+    padding: 3.2rem;
+}
+
 .learn h2 {
     text-align: center;
     font-size: 3.2rem;
@@ -290,9 +299,6 @@ section {
     row-gap: 1rem;
 }
 
-.topic {
-    height: 24rem;
-}
 
 .topic p {
     font-size: 1.6rem;
@@ -313,19 +319,53 @@ section {
 /* ------------------------------- CHAPTERS ------------------------------- */
 /* ---------------------------------------------------------------------- */
 
-.summary {
-    background-color: coral;
-    position: relative;
+.chapters {
+    padding: 3.2rem;
 }
 
-.summary-svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
+.chapters h2 {
+    margin-top: 6.4rem;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--dark-color);
 }
 
+.chapters p {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 300;
+    color: var(--dark-color);
+    margin-bottom: 4.8rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.card {
+    flex: 1;
+    padding: 4.8rem 2.4rem 0 2.4rem;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 13rem;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin: 2.4rem 0 1.6rem 0;
+}
+
+.card p {
+    font-size: 1.6rem;
+}
 
 /* ---------------------------------------------------------------------- */
 /* ------------------------------- SUMMARY ------------------------------ */
@@ -350,6 +390,9 @@ section {
     .hero-text h1 {
         font-size: 4.4rem;
     }
+    .topics {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media (max-width: 992px) {
     .hero {
@@ -362,8 +405,10 @@ section {
         padding: 18.4rem 3.2rem;
         text-align: center;
     }
-
-
+    .topics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
 }
 @media (max-width: 800px) {
     .desktop-menu-items {
@@ -399,5 +444,9 @@ section {
 
     .btn {
         font-size: 1.6rem;
+    }
+
+    .topics {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
