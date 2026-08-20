@@ -493,6 +493,104 @@ section p {
     color: var(--primary-color);
 }
 
+/* ---------------------------------------------------------------------- */
+/* ------------------------------- DETAILS ------------------------------ */
+/* ---------------------------------------------------------------------- */
+
+.details-flex {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    padding: 3.2rem;
+}
+
+.details-image {
+    flex: 1;
+}
+
+.details-content {
+    flex: 1;
+}
+
+.details-content h2 {
+    text-align: left;
+}
+
+.details-content p {
+    text-align: left;
+}
+
+.details-content .heading-border {
+    margin: 1rem auto 3.2rem 0;
+}
+
+.details .btn:hover {
+    border: 1px solid var(--secondary-color)
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------------- DETAILS ------------------------------ */
+/* ---------------------------------------------------------------------- */
+
+
+.author-flex {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    padding: 3.2rem;
+}
+
+.author-image {
+    flex: 1;
+}
+
+.author-content {
+    flex: 1;
+}
+
+.author h2 {
+    text-align: left;
+}
+
+.author .heading-border {
+    margin: 1rem auto 1.6rem 0;
+}
+
+.author p {
+    text-align: left;
+    padding: 0;
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.author ul {
+    margin-bottom: 2.4rem;
+}
+
+.author li {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.author li p {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+
+}
+
+.author span {
+    font-weight: bold;
+}
+
+.author-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: var(--radius-pill);
+    padding: 0.1rem;
+}
 
 
 
