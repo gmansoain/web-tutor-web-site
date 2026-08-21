@@ -15,6 +15,7 @@ SPACING SYSTEM (px)
     --primary-color-tint-1: rgba(235, 77, 85, 0.7);
     --secondary-color: #ffc05a;
     --light-color: #f9fafb;
+    --light-gray: #f1f1f1;
     --dark-color: #272d35;
 
     --radius-sm:   0.4rem;   /* subtle — inputs, tags */
@@ -99,6 +100,11 @@ section p {
 
 .container-sm {
     max-width: 80rem;
+    margin: 0 auto;
+}
+
+.container-xs {
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -355,7 +361,7 @@ section p {
 /* ---------------------------------------------------------------------- */
 
 .summary {
-    background-color: #f1f1f1;
+    background-color: var(--light-gray)
 }
 
 .summary .container-lg {
@@ -593,7 +599,7 @@ section p {
 }
 
 /* ---------------------------------------------------------------------- */
-/* ------------------------------- DETAILS ------------------------------ */
+/* -------------------------------- STATS ------------------------------- */
 /* ---------------------------------------------------------------------- */
 
 .stats {
@@ -602,6 +608,7 @@ section p {
     background-repeat: no-repeat;
     background-position: center;
     padding: 7rem 0;
+    margin-bottom: 6rem;
 }
 
 .stats-flex {
@@ -647,6 +654,96 @@ section p {
 }
 
 
+/* ---------------------------------------------------------------------- */
+/* ------------------------------- DETAILS ------------------------------ */
+/* ---------------------------------------------------------------------- */
+
+.newsletter {
+    background-color: var(--light-gray);
+    padding: 6.4rem;
+    margin-bottom: 6rem;
+}
+
+.newsletter h2 {
+    margin-bottom: 1.6rem;
+}
+
+.newsletter p {
+    font-size: 1.6rem;
+    padding: 0 6rem;
+    margin-bottom: 3.2rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.newsletter input {
+    display: block;
+    padding: 1.6rem 3.2rem;
+    width: 60%;
+    border: 1px solid lightgray;
+    border-radius: var(--radius-pill);
+}
+
+/* ---------------------------------------------------------------------- */
+/* -------------------------------- FOOTER ------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+footer {
+    background-color: var(--dark-color);
+    padding-top: 10rem;
+}
+
+footer h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    color: var(--light-color)
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    padding-bottom: 10rem;
+}
+
+.social-icon {
+    width: 5.2rem;
+    height: 5.2rem;
+    color: var(--light-color);
+}
+
+.footer-nav-bar {
+    padding: 3.2rem 0;
+    border-top: 0.5px solid var(--light-color);
+}
+
+.footer-links {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.footer-links li:last-child {
+    margin-left: auto;
+}
+
+.footer-links a,
+.footer-links li {
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
 
 
 /* ---------------------------------------------------------------------- */
